@@ -3,7 +3,7 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
     kotlin("multiplatform")
-    id("org.jetbrains.compose") version "0.2.0-build132"
+    id("org.jetbrains.compose") version "0.3.0-build133"
 }
 
 group = "pl.mareklangiewicz"
@@ -31,7 +31,8 @@ compose.desktop {
         mainClass = "MainKt"
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "jvm"
+            packageName = "tixy-playground"
+            vendor = "Marek Langiewicz"
         }
     }
 }
